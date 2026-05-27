@@ -1436,6 +1436,11 @@ display: none;
         box-sizing: border-box;
     }
 
+
+    .pp {
+       text-align: center;
+    }
+
     .leftt {
         display: flex !important;
         overflow-x: auto;
@@ -1443,6 +1448,10 @@ display: none;
         width: 100%;
         margin-bottom: 15px;
         justify-content: center;
+    }
+
+    .church p {
+        text-align: center;
     }
 
     .leftt img {
@@ -1459,7 +1468,7 @@ display: none;
         gap: 10px;
         font-size: 12px;
         margin: 0;
-      
+     
     }
     
     .infoo p span {
