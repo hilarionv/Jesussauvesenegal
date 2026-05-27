@@ -847,6 +847,10 @@ footer h4 {
     overflow: hidden;
 }
 
+.sermon-title {
+    color: goldenrod;
+}
+
 
 
 .sermon-thumb:hover img {
@@ -1534,9 +1538,19 @@ display: none;
             gap: 30px;
         }
 
+        @media screen and (max-width: 768px) {
+            .sermons-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+
     
 }
 body {
     overflow-x: hidden;
 }
+
+
+
 
