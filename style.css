@@ -88,6 +88,20 @@ nav ul li a {
     color: black;
 }
 
+footer ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: white;
+}
+
 .don a {
     padding: 10px;
     background-color: brown;
@@ -883,6 +897,102 @@ footer h4 {
     display: block;
 }
 
+/* ===== PROGRAMME ===== */
+.programme {
+    padding: 60px 40px 30px;
+    text-align: center;
+}
+
+.programme p:first-of-type {
+    color: goldenrod;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.programme h1 {
+    font-size: 32px;
+    margin-top: 3px;
+    margin-bottom: 14px;
+}
+
+.programme p:last-of-type {
+    font-size: 14px;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto 40px;
+    line-height: 1.7;
+}
+
+/* ===== CULTE CARDS ===== */
+.culte-content {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 30px;
+    padding: 0 40px 60px;
+}
+
+.culte-card {
+    position: relative;
+    width: 100%;
+    min-height: 420px;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+}
+
+.culte-card:first-of-type {
+    background-image: url(PHOTO-2026-05-27-17-30-28.jpg);
+    background-position: center;
+    background-size: cover;
+    object-position: top;
+}
+
+.culte-card:last-of-type {
+    background-image: url(IMG_4072\ 2.JPG);
+    background-position: center;
+    background-size: cover;
+}
+
+/* Overlay sombre en bas */
+.culte-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.1) 60%, transparent 100%);
+    z-index: 1;
+}
+
+.info-culte {
+    position: relative;
+    z-index: 2;
+    color: white;
+    padding: 20px 24px;
+    width: 100%;
+}
+
+.info-culte h5 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 0 10px;
+    color: goldenrod;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.info-culte p {
+    font-size: 13px;
+    margin: 4px 0;
+    color: #ddd;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+
 
 
 
@@ -911,10 +1021,10 @@ footer h4 {
     .bio {
         position: relative;
   background-image: url(papaedmond.jpeg);
-        background-size: contain;
+        background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        min-height: 600px;
+        min-height: 610px;
         display: flex;
         align-items: center;
         padding: 60px 40px;
@@ -940,8 +1050,26 @@ text-align: center;
         height: 100vh;
     }
     .text h1 {
-        font-size: 26px;
+        font-size: 28px;
+        text-align: center;
     }
+    .text p {
+        font-size: 11px;
+        text-align: center;
+        
+    }
+
+    .top1 {
+  
+        align-items: center;
+      
+    }
+    
+    .text {
+      
+        text-align: center;
+    }
+
     .RS {
         right: 20px;
         bottom: 15px;
