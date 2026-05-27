@@ -1263,7 +1263,10 @@ text-align: center;
     .sermon-date {
       display: none;
     }
-
+    .sermon-thumb img {
+        height: 170px; /* diminue cette valeur */
+    }
+    
       
 
     .text {
