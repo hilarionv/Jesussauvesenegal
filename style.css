@@ -1042,6 +1042,14 @@ footer h4 {
         gap: 4px;
     }
 
+    .culte-content {
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+        gap: 20px;
+        padding: 0 40px 60px;
+    }
+
 
     .link a {
 font-size: 10px;
