@@ -418,6 +418,7 @@ footer h4 {
     background-color: black;
     color: white;
     position: relative;
+    min-height: 580px;
 }
 
 .left {
@@ -459,6 +460,7 @@ footer h4 {
     flex-wrap: wrap;
     gap: 8px;
     margin: 15px 0;
+    margin-top: 20px;
 }
 
 .infoo {
@@ -877,6 +879,10 @@ footer h4 {
    display: flex; justify-content: center; margin-bottom: 50px; margin-top: 40px; gap: 8px;
 }
 
+.desactive {
+    display: block;
+}
+
 
 
 
@@ -889,6 +895,12 @@ footer h4 {
         z-index: 200;
     }
 
+    .desactive {
+        display: none;
+        margin-top: 20px;
+    }
+    
+
     .bio-photo {
   
    
@@ -898,7 +910,7 @@ footer h4 {
 
     .bio {
         position: relative;
-  background-image: url(Capture\ d’écran\ .\ 2026-05-27\ à\ 15.18.22.jpeg);
+  background-image: url(papaedmond.jpeg);
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
