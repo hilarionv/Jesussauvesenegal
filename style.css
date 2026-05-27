@@ -1467,3 +1467,26 @@ display: none;
         height: 0px;
         }
 }
+
+@media screen and (max-width: 768px) {
+    .media {
+        flex-wrap: wrap;
+    }
+   
+        .media img {
+            flex: 1 1 45%;
+            height: 150px;
+        }
+    
+        .media img:first-of-type,
+        .media img:last-of-type {
+            flex: 1 1 45%;
+            height: 150px;
+        }
+
+    
+}
+body {
+    overflow-x: hidden;
+}
+
