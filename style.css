@@ -1250,4 +1250,38 @@ display: none;
         border-radius: 8px;
         flex-shrink: 0;
     }
+
+    .infoo p {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 12px;
+        margin: 0;
+    }
+    
+    .infoo p span {
+        height: 18px;
+        width: 18px;
+        background-color: goldenrod;
+        border-radius: 50%;
+        display: inline-block;
+        text-align: center;
+    }
+    
+    .info-SN a, .info-Canada a, 
+    .info-Togo a, .info-Guediawaye a {
+        color: burlywood;
+        text-decoration: none;
+        font-size: 11px;
+        border-bottom: 1px solid burlywood;
+        padding-bottom: 2px;
+    }
+    
+    .select button {
+        padding: 7px;
+        border-radius: 6px;
+        background-color: transparent;
+        border: 1px solid goldenrod;
+        color: white;
+    }
 }
