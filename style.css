@@ -663,23 +663,168 @@ footer h4 {
 
 
 
-
-    @media screen and (max-width: 768px) {
-        .toggle {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 200;
-        }
-        nav {
-            display: none;
-        }
-        .footer-contain {
-            display: flex;
-            flex-direction: column;
-        }
-        footer img {
-            height: 0px;
-            }
-        
+@media screen and (max-width: 768px) {
+    /* HEADER */
+    .toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 200;
     }
+    nav {
+        display: none;
+    }
+    .don {
+        display: none;
+    }
+    header {
+        padding: 20px;
+        height: 100vh;
+    }
+    .text h1 {
+        font-size: 26px;
+    }
+    .RS {
+        right: 20px;
+        bottom: 15px;
+    }
+
+    /* REJOIGNEZ-NOUS */
+    .join {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .verset {
+        position: static;
+        margin-top: 20px;
+        text-align: left;
+        max-width: 100%;
+    }
+
+    /* A PROPOS */
+    .about {
+        padding: 40px 20px;
+    }
+    .about-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    /* BIO PASTEUR */
+    .bio {
+        padding: 40px 20px;
+    }
+    .bio-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .agauche img {
+        width: 100%;
+        height: 350px;
+    }
+
+    /* FOOTER */
+    .footer-contain {
+        flex-direction: column;
+        gap: 30px;
+        padding: 20px;
+    }
+    .logo-footer {
+        border-right: none;
+        border-bottom: 1px solid #333;
+        padding-right: 0;
+        padding-bottom: 20px;
+    }
+    footer img {
+        height: 60px;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        padding: 15px 20px;
+    }
+    .newsletter-form {
+        flex-direction: column;
+    }
+    .newsletter-form input {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .left {
+        display: none;
+    }
+
+    .leftt {
+        display: flex !important;
+        overflow-x: auto;
+        gap: 10px;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .leftt img {
+        height: 180px;
+        width: 150px;
+        object-fit: cover;
+        border-radius: 8px;
+        flex-shrink: 0;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .left {
+        display: none;
+    }
+
+    .leftt {
+        display: flex !important;
+        overflow-x: auto;
+        gap: 10px;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .leftt img {
+        height: 180px;
+        width: 150px;
+        object-fit: cover;
+        border-radius: 8px;
+        flex-shrink: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .join {
+        padding: 30px 20px;
+        flex-direction: column;
+    }
+
+    .right {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .leftt {
+        display: flex !important;
+        overflow-x: auto;
+        gap: 10px;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .leftt img {
+        height: 150px;
+        width: 130px;
+        object-fit: cover;
+        border-radius: 8px;
+        flex-shrink: 0;
+    }
+}
