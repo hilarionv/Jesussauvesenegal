@@ -645,7 +645,7 @@ footer h4 {
 .bio-overlay {
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.6);
     z-index: 1;
 }
 
@@ -873,6 +873,10 @@ footer h4 {
     border-radius: 8px;
 }
 
+.link {
+   display: flex; justify-content: center; margin-bottom: 50px; margin-top: 40px; gap: 8px;
+}
+
 
 
 
@@ -884,6 +888,35 @@ footer h4 {
         justify-content: center;
         z-index: 200;
     }
+
+    .bio-photo {
+  
+   
+        height: 0;
+    
+    }
+
+    .bio {
+        position: relative;
+  background-image: url(Capture\ d’écran\ .\ 2026-05-27\ à\ 15.18.22.jpeg);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 600px;
+        display: flex;
+        align-items: center;
+        padding: 60px 40px;
+        box-sizing: border-box;
+        overflow: hidden;
+        
+    }
+
+
+    .link a {
+font-size: 10px;
+text-align: center;
+    }
+
     nav {
         display: none;
     }
