@@ -1033,6 +1033,15 @@ footer h4 {
         
     }
 
+    .info-culte p {
+        font-size: 10px;
+        margin: 4px 0;
+        color: #ddd;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+
 
     .link a {
 font-size: 10px;
@@ -1235,7 +1244,7 @@ display: none;
     }
 
     .leftt img {
-        height: 150px;
+        height: 180px;
         width: 130px;
         object-fit: cover;
         border-radius: 8px;
