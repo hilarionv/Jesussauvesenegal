@@ -1259,7 +1259,13 @@ text-align: center;
         padding-right: 57px;
       
     }
-    
+
+    .sermon-date {
+      display: none;
+    }
+
+      
+
     .text {
       
         text-align: center;
