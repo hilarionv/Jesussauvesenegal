@@ -876,7 +876,7 @@ footer h4 {
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (min-width: 400px) {
     /* HEADER */
     .toggle {
         display: flex;
@@ -997,7 +997,9 @@ display: none;
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (min-width: 400px) {
+    
+
     .left {
         display: none;
     }
@@ -1042,7 +1044,9 @@ display: none;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (min-width: 400px) {
+    
+
     .join {
         padding: 30px 20px;
         flex-direction: column;
