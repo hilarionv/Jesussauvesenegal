@@ -10,12 +10,10 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 20px 40px;
     color: white;
-    height: 90vh;
-    flex-direction: column;
-    justify-content: space-between;
-    
+    height: 100vh;
+    padding-top: 80px; /* espace pour la nav fixe */
+    box-sizing: border-box;
 }
 
 .overlay {
@@ -25,7 +23,22 @@ header {
     z-index: 1;
 }
 
-.top, .top1, .text, .button {
+.top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 10px 40px;
+    box-sizing: border-box;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.top1, .text, .button {
     position: relative;
     z-index: 2;
 }
@@ -37,26 +50,20 @@ header {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    z-index: 2;
+    padding: 0 40px;
 }
-
 
 .text {
     max-width: 600px;
     text-align: start;
 }
+
 .text h1 {
-font-size: 40px;
+    font-size: 40px;
 }
 
 .text p {
     font-size: 13px;
-    }
-
-.top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .logo {
@@ -65,16 +72,7 @@ font-size: 40px;
 }
 
 .logo img {
-    height: 80px;
-}
-
-.full-menu {
-    display: none;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-    justify-content: flex-start;
-    text-align: start;
+    height: 60px;
 }
 
 nav ul {
@@ -84,23 +82,10 @@ nav ul {
     margin: 0;
     padding: 0;
 }
-footer ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin: 0;
-    padding: 0;
-}
 
 nav ul li a {
     text-decoration: none;
-    color: white;
-}
-
-footer ul li a {
-    text-decoration: none;
-    color: white;
+    color: black;
 }
 
 .don a {
@@ -117,6 +102,54 @@ footer ul li a {
     z-index: 300;
     position: relative;
     cursor: pointer;
+    color: black;
+}
+
+.full-menu {
+    display: none;
+}
+
+.toggle .ri-close-large-line {
+    display: none;
+}
+
+.toggle.active .ri-menu-line {
+    display: none;
+}
+
+.toggle.active .ri-close-large-line {
+    display: block;
+}
+
+.full-menu.active {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    padding: 80px 40px 40px;
+    z-index: 50;
+    box-sizing: border-box;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.full-menu.active ul {
+    flex-direction: column;
+    gap: 30px;
+}
+
+.full-menu.active ul li a {
+    font-size: 30px;
+    color: black;
+}
+
+.full-menu.active ul li a:hover {
+    background-color: burlywood;
+    padding: 10px;
 }
 
 .button {
@@ -147,9 +180,9 @@ footer ul li a {
     position: absolute;
     z-index: 3;
     bottom: 20px;
-right: 40px;
-display: flex;
-gap: 7px;
+    right: 40px;
+    display: flex;
+    gap: 7px;
 }
 
 .RS a {
@@ -166,11 +199,15 @@ gap: 7px;
     transition: 0.3s;
 }
 
-
 .RS a:hover {
     background-color: white;
     color: brown;
 }
+
+.hidden {
+    display: none !important;
+}
+
 
 .footer-RS {
  
@@ -378,8 +415,8 @@ footer h4 {
     justify-content: center;
     align-items: center;
     gap: 40px;
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
     position: relative;
 }
 
@@ -464,6 +501,7 @@ footer h4 {
     border-radius: 6px;
     background-color: transparent;
     border: 1px solid goldenrod;
+    color: white;
 }
 
 .select button.active {
@@ -499,7 +537,7 @@ footer h4 {
 }
 .about {
     padding: 60px 40px;
-    background-color: whitesmoke;
+ 
 }
 
 .about > p:first-of-type {
@@ -660,6 +698,162 @@ footer h4 {
     color: burlywood;
     font-weight: 600;
 }
+
+.sermons {
+    padding: 60px 40px;
+    background-color: whitesmoke;
+    min-height: 600px;
+    align-items: center;
+
+    flex-direction: column;
+}
+
+.sermons-top {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    margin-top: 50px;
+}
+
+
+.sermons-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.sermon-thumb img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    display: block;
+    transition: 0.3s;
+}
+
+
+.sermons p:first-of-type {
+    color: burlywood;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.sermons h1 {
+    font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.sermons p:last-of-type {
+    font-size: 13px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.sermons-RS {
+    display: flex;
+    gap: 7px;
+}
+
+.sermons-RS a {
+    text-decoration: none;
+    font-size: 15px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid black;
+    color: black;
+    transition: 0.3s;
+}
+
+.youtube-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+    margin-left: auto;
+    width: fit-content;
+    padding: 10px 18px;
+    background-color: #FF0000;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 11px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.youtube-btn:hover {
+    background-color: #cc0000;
+}
+
+.youtube-btn i {
+    font-size: 15px;
+}
+
+
+.sermons-RS a:hover {
+    background-color: black;
+    color: white;
+}
+
+.sermons-right {
+    flex: 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.sermon-card a {
+    text-decoration: none;
+    color: black;
+}
+
+.sermon-thumb {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+
+.sermon-thumb:hover img {
+    transform: scale(1.03);
+}
+
+.play-btn {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.3);
+    color: white;
+    font-size: 35px;
+    transition: 0.3s;
+}
+
+.play-btn:hover {
+    background: rgba(0,0,0,0.5);
+}
+
+.sermon-title {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 10px 0 4px;
+}
+
+.sermon-date {
+    font-size: 12px;
+    color: #888;
+}
+
 
 
 
