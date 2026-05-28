@@ -1649,6 +1649,190 @@ font-size: 11px;
     margin-top: 3px;
 }
 
+.offrande-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    
+}
+
+.FORMULAIRE {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ background-color: transparent;
+ margin-bottom: 20px;
+    
+    
+}
+.FORMULAIRE form {
+   background-color: white;
+   padding: 20px;
+   border-radius: 20px;
+   box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
+   max-width: 700px;
+   width: 80%;
+
+       
+       
+   }
+
+
+.FORMULAIRE input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #eee;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 6px;
+    width: 97%;
+       
+       
+   }
+
+   .FORMULAIRE label {
+   
+  
+font-size: 15px;
+font-weight: 500;
+       
+       
+   }
+
+   .FORMULAIRE select {
+   
+  
+margin-top: 8px;
+margin-bottom: 8px;
+padding: 6px;
+width: 100%;
+font-size: 14px;
+           
+           
+       }
+
+       .FORMULAIRE textarea {
+   
+        border: 1px solid #eee;
+        margin-top: 8px;
+        margin-bottom: 8px;
+   
+        width: 100%;
+        font-size: 14px;
+        border-radius: 8px;
+                   
+               }
+
+               .FORMULAIRE button {
+   
+             background-color: goldenrod;
+             width: 100%;
+             padding: 10px;
+             border: 1px solid #eee;
+             border-radius: 8px;
+             font-size: 14px;
+             color: white;
+                           
+                       }
+
+
+
+.steps {
+    background-color: whitesmoke;
+    min-height: 200px;
+    width: 80%;
+    border-radius: 40px;
+    align-items: center;
+ 
+}
+
+
+
+
+.offrande-content h1 {
+  font-size: 25px;
+  text-align: center;
+  padding: 30px;
+    
+}
+.step {
+    width: 80%;
+    display: flex;
+   
+    flex-direction: column;
+    align-items: center;
+ text-align: start;
+ min-height: 200px;
+ background-color: whitesmoke;
+ margin-bottom: 40px;
+ border-radius: 40px;
+}
+
+.step h5 {
+margin-top: 5px;
+text-transform: uppercase;
+}
+.step p {
+    margin-bottom: 0px;
+    font-size: 12px;
+    color: goldenrod;
+}
+
+.step .select button {
+ color: black;
+}
+
+.steps h5 {
+    margin-top: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    }
+    .steps p {
+        margin-bottom: 0px;
+        font-size: 12px;
+        color: goldenrod;
+        text-align: center;
+    }
+
+.modalité {
+
+    display: flex;
+    gap: 10px;
+
+}
+
+.modalité-paiement {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+  
+    color: goldenrod;
+}
+
+.modalité-paiement img {
+border-radius: 6px;
+height: 90px;
+background-color: white;
+border-top: 1px solid goldenrod;
+}
+
+.modalité-paiement img:hover {
+   
+    border-top: 3px solid goldenrod;
+    }
+
+    .modalité-paiement .info p{
+   
+      color: black;
+        }
+
+
+
+
 @media screen and (max-width: 768px) {
     .maps {
         flex-direction: column;

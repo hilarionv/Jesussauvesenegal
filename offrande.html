@@ -29,7 +29,7 @@
         <div class="overlay"></div>
         <div class="top">
             <div class="logo">
-                <img src="image/Photoroom_20260526_160948.PNG" alt="" srcset="">
+               <a href="index.html"><img src="image/Photoroom_20260526_160948.PNG" alt="" srcset=""></a> 
             </div>
             <nav>
                 <ul class="menu">
@@ -63,7 +63,7 @@
             <div class="" style=" display: flex; align-items: center; gap: 15px;">
             <div class="toggle" id="toggle">
                 <i class="ri-menu-line"></i>
-                <i class="ri-close-large-line"></i>
+                <i class="ri-close-large-line">X</i>
             </div>
          
             <div class="don">
@@ -101,32 +101,122 @@
 
         <div class="top1">
             <div class="text">
-                <h1>BIENVENUE DANS LA COMMUNAUTÉ DE JÉSUS SAUVE
+                <h1 style="font-size: 35px;">OFFRANDES
                 </h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid temporibus debitis suscipit nihil dignissimos perspiciatis ea exercitationem, at magnam maxime officiis nobis eos repellat voluptatem velit cumque laudantium incidunt minus.</p>
+                <p>Faites vos dons, dîmes et offrandes...</p>
             
             </div>
 
-            <div class="button">
-                <a href="">Rendez-vous</a>
-                <a href="">Contact</a>
+        </div>
+  
+    </header>
+    <main class="offrande-content">
+        <h1>FAITES VOS SEMENCES EN TOUTE SÉCURITÉ</h1>
+        <div class="first step">
+            <p>ÉTAPE 1</p>
+            <h5>Sélectionnez votre moyen de paiement</h5>
+        <div class="select paiement">
+            <button class="active"> <i class="ri-hand-coin-line"></i> ESPECES</button>
+            <button class="">  <i class="ri-send-ins-fill"></i> EN LIGNE</button>
+      
+        </div>
+    </div>
+
+<div class="second step">
+    <p>ÉTAPE 2</p>
+    <h5>Où vous trouvez-vous ?</h5>
+ <div class="">
+        <div class="select pays">
+            <button class="active"> 🇸🇳 SÉNÉGAL</button>
+            <button class=""> <i class="ri-global-line"></i>EXTÉRIEUR</button>
+        </div>
+    </div>
+</div>
+
+<div class="third step">
+    <p>ÉTAPE 3</p>
+    <h5>Utiliser les infos en fonction du mode de paiement choisi</h5>
+    <div class="modalité">
+        <div class="modalité-paiement wave">
+            <img src="Photoroom_20260528_173127.PNG" alt="" srcset="">
+            <div class="info">
+                <p>77800000</p>
             </div>
         </div>
-        <div class="RS">
-            <a href="https://instagram.com" target="_blank">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
-        
-            <a href="https://tiktok.com" target="_blank">
-                <i class="fa-brands fa-tiktok"></i>
-            </a>
-        
-            <a href="https://whatsapp.com" target="_blank">
-                <i class="fa-brands fa-whatsapp"></i>
-            </a>
+        <div class="modalité-paiement om">
+            <img src="Photoroom_20260528_173200.PNG" alt="" srcset="">
+            <div class="info">
+                <p>77800000</p>
+            </div>
         </div>
-    </header>
-    <main></main>
+    </div>
+
+    <div class="modalité-exterieure">
+        <div class="modalité-paiement Paypal">
+            <img src="Photoroom_20260528_173107.PNG" alt="" srcset="">
+            <div class="info">
+                <p>77800000</p>
+            </div>
+        </div>
+        <div class="modalité-paiement Interact">
+            <img src="Photoroom_20260528_173143.PNG" alt="" srcset="">
+            <div class="info">
+                <p>77800000</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="for steps">
+    <p>ÉTAPE 4</p>
+    <h5>Remplissez le formulaire</h5>
+
+<div class="FORMULAIRE">
+    <form action="">
+        <label for="Name">Nom</label> <br>
+        <input type="text" placeholder="Votre Nom"> <br>
+
+        <label for="Prenom">Prénom</label> <br>
+        <input type="text" placeholder="Votre Prénom"> <br>
+
+        <label for="email">Email</label> <br>
+        <input type="text" placeholder="Votre Email"> <br>
+
+        <label for="telephone">Téléphone</label> <br>
+        <input type="tel" placeholder="Votre Téléphone"> <br>
+
+
+        <label for="email">Motif</label> <br>
+     <select name="" id="" class="type-offrande">
+        <option value="dîme">Dîme</option>
+        <option value="Offrande">Offrande</option>
+        <option value="don">Don</option>
+        <option value="autres">Autres</option>
+     </select> <br>
+
+
+
+        <label for="email">Moyen de paiement</label> <br>
+     <select name="" id="">
+        <option value="Wave">Wave</option>
+        <option value="Paypal">Paypal</option>
+        <option value="Orange-Money">Orange Money</option>
+        <option value="interact">Interact</option>
+        <option value="espéces">Espéces</option>
+     </select> <br>
+    
+
+    <label for="message">Votre message </label> <br>
+    <textarea name="" id="" placeholder="Une requête de prière, une instruction....">
+
+    </textarea>
+
+    <button type="submit">ENVOYER</button>
+</form>
+</div>
+</div>
+
+
+    </main>
 
 
 
@@ -176,59 +266,46 @@
                 </div>
             </div>
         </footer>
-        <script>const menuToggle = document.getElementById("toggle");
-            const fullMenu = document.querySelector(".full-menu");
-            const top1 = document.querySelector(".top1");
-            
-            menuToggle.addEventListener("click", function() {
-                menuToggle.classList.toggle("active");
-                fullMenu.classList.toggle("active");
-                top1.classList.toggle("hidden");
-            });
-    
-            const closeMenu = document.getElementById("closeMenu");
-    
-    closeMenu.addEventListener("click", function() {
-        fullMenu.classList.remove("active");
-        menuToggle.classList.remove("active");
-        top1.classList.remove("hidden");
+   <script>
+
+const menuToggle = document.getElementById("toggle");
+const fullMenu = document.querySelector(".full-menu");
+const top1 = document.querySelector(".top1");
+
+menuToggle.addEventListener("click", function() {
+    menuToggle.classList.toggle("active");
+    fullMenu.classList.toggle("active");
+    top1.classList.toggle("hidden");
+});
+
+
+    const paysButtons = document.querySelectorAll(".pays button");
+
+const modaliteSN = document.querySelector(".modalité");
+const modaliteExt = document.querySelector(".modalité-exterieure");
+
+paysButtons.forEach((button, index) => {
+
+    button.addEventListener("click", function () {
+
+        paysButtons.forEach(btn => btn.classList.remove("active"));
+
+        this.classList.add("active");
+
+        if(index === 0){
+            modaliteSN.style.display = "flex";
+            modaliteExt.style.display = "none";
+        }
+
+        else{
+            modaliteSN.style.display = "none";
+            modaliteExt.style.display = "flex";
+        }
+
     });
-    
-    const buttons = document.querySelectorAll(".select button");
-    const infos = document.querySelectorAll(".info-SN, .info-Canada, .info-Togo, .info-Guediawaye");
-    
-    // Cacher tous les infos au départ sauf le premier
-    infos.forEach((info, i) => {
-        if (i !== 0) info.style.display = "none";
-    });
-    
-    buttons.forEach((button, index) => {
-        button.addEventListener("click", function() {
-            // Retirer active de tous les boutons
-            buttons.forEach(btn => btn.classList.remove("active"));
-            // Ajouter active au bouton cliqué
-            this.classList.add("active");
-            // Cacher tous les infos
-            infos.forEach(info => info.style.display = "none");
-            // Afficher le bon
-            if (infos[index]) infos[index].style.display = "block";
-        });
-    });
-    
-    
-    new Splide('.splide', {
-        type: 'loop',
-        perPage: 1,
-        arrows: false,
-        pagination: true,
-    }).mount();
-    
-    
-    
-    
-    
-            
-            </script>
+
+});
+   </script>
        
                 
             </body>
