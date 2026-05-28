@@ -655,32 +655,35 @@ footer h4 {
     padding: 60px 40px;
     box-sizing: border-box;
     overflow: hidden;
-    background-color: black;
+    background-color: white;
+    justify-content: center;
+    gap: 50px;
 }
 
-.bio-overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.6);
-    z-index: 1;
-}
+
+
+
 
 .bio-photo {
-    position: absolute;
-    right: 80px;
+   
+   
     bottom: 0;
-    height: 90%;
-    object-fit: cover;
-    object-position: top;
-    z-index: 2;
+  height: 560px;
+  width: 420px;
+  order: 2;
+  
+
+ 
     border-radius: 10px 10px 0 0;
 }
 
 .bio-text {
     position: relative;
     z-index: 3;
-    max-width: 500px;
-    color: white;
+    max-width: 550px;
+    color: black;
+    margin-top: -40px;
+    
 }
 
 .bio-text p:first-of-type {
@@ -700,7 +703,28 @@ footer h4 {
 .bio-text p {
     font-size: 14px;
     line-height: 1.8;
-    color: #ddd;
+    color: black;
+}
+
+.mot {
+    margin-top: 80px;
+}
+.mot a {
+color: goldenrod;
+text-decoration: none;
+border-bottom: 1px solid goldenrod;
+}
+
+.mott {
+  margin-top: 10px;
+  text-align: end;
+}
+.mott a {
+color: goldenrod;
+text-decoration: none;
+border-bottom: 1px solid goldenrod;
+font-size: 11px;
+
 }
 
 .verset-bio {
@@ -723,6 +747,71 @@ footer h4 {
     color: goldenrod;
     font-weight: 600;
 }
+
+.bio-mobile {
+    display: none;
+    padding: 40px 20px;
+    background-color: white;
+}
+
+.bio-mobile-title {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.bio-mobile-title p {
+    color: burlywood;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0 0 5px 0;
+}
+
+.bio-mobile-title h1 {
+    font-size: 28px;
+    margin: 0;
+}
+
+.bio-card {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.bio-card img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+}
+
+.bio-card-info {
+    padding: 20px;
+    background-color: white;
+}
+
+.bio-card-info > p:first-of-type {
+    color: burlywood;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.bio-card-info h2 {
+    font-size: 22px;
+    margin: 0 0 15px 0;
+}
+
+.bio-card-info > p:nth-of-type(2) {
+    font-size: 13px;
+    color: #555;
+    line-height: 1.7;
+}
+
+
+
 
 
 .sermons {
@@ -1208,22 +1297,22 @@ footer h4 {
 }
 
 .pray-center a:first-of-type {
-    padding: 12px 25px;
+    padding: 13px 26px;
     background-color: goldenrod;
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .pray-center a:last-of-type {
-    padding: 12px 25px;
+    padding: 13px 26px;
     background-color: transparent;
     color: goldenrod;
     text-decoration: none;
     border-radius: 5px;
     border: 1px solid goldenrod;
-    font-size: 14px;
+    font-size: 18px;
 }
 .pray-bottom {
     margin-top: 40px;
@@ -1262,6 +1351,8 @@ footer h4 {
         justify-content: center;
         z-index: 200;
     }
+
+
 
     .but {
         text-decoration: none; color: black;
@@ -1318,27 +1409,18 @@ footer h4 {
     }
     
 
-    .bio-photo {
-  
-   
-        height: 0;
-    
-    }
+ 
 
-    .bio {
-        position: relative;
-  background-image: url(papaedmond.jpeg);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        min-height: 610px;
-        display: flex;
-        align-items: center;
-        padding: 60px 40px;
-        box-sizing: border-box;
-        overflow: hidden;
-        
-    }
+        .bio {
+            display: none;
+        }
+        .bio-card {
+            display: block;
+        }
+   
+    
+
+    
 
     .info-culte p {
         font-size: 10px;
@@ -1364,7 +1446,7 @@ text-align: center;
     }
     .link  {
    display: flex;
-   justify-content: start;
+   justify-content: center;
             }
         
     nav {
@@ -1442,11 +1524,24 @@ text-align: center;
     /* A PROPOS */
     .about {
         padding: 40px 20px;
+        text-align: center;
     }
     .about-content {
         flex-direction: column;
         gap: 30px;
     }
+
+    .about-content {
+        flex-direction: column;
+        text-align: justify;
+    }
+    
+    .mission h5, .Vision h5 {
+        justify-content: center;
+    }
+    
+
+
 
     .about-content img {
       height: 0;
@@ -1727,6 +1822,8 @@ body {
         width: auto !important;
         margin: 0 !important;
     }
+
+
 }
 .mobile-only { display: none; }
 .desktop-only { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
