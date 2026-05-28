@@ -1282,6 +1282,27 @@ footer h4 {
         text-align: center;
     }
 
+    .pray-center a:first-of-type {
+        padding: 11px 24px;
+        background-color: goldenrod;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 12px;
+        font-weight: 600;
+    }
+    
+    .pray-center a:last-of-type {
+        padding: 11px 24px;
+        background-color: transparent;
+        color: goldenrod;
+        text-decoration: none;
+        border-radius: 5px;
+        border: 1px solid goldenrod;
+        font-size: 12px;
+        font-weight: 600;
+    }
+
 
     .sermons-right {
         flex: 2;
