@@ -1336,6 +1336,346 @@ font-size: 11px;
     margin: 0;
 }
 
+/* FORMULAIRE */
+.formulaire {
+    display: flex;
+    gap: 60px;
+    padding: 60px 40px;
+    align-items: flex-start;
+}
+
+.formulaire-left {
+    flex: 1;
+    position: sticky;
+    top: 100px;
+}
+
+.formulaire-left p:first-of-type {
+    color: burlywood;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.formulaire-left h1 {
+    font-size: 32px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.formulaire-left p:last-of-type {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.7;
+}
+
+.formulaire-right {
+    flex: 1;
+}
+
+.formulaire-right form {
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.formulaire-right h5 {
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.form-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-content label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.form-content input,
+.form-content textarea {
+    padding: 10px 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    font-family: "Inter", sans-serif;
+    transition: 0.3s;
+}
+
+.form-content input:focus,
+.form-content textarea:focus {
+    border-color: burlywood;
+}
+
+.form-content textarea {
+    resize: vertical;
+}
+
+/* Bouton envoyer — à ajouter dans le HTML */
+.form-content button {
+    padding: 12px;
+    background-color: goldenrod;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.form-content button:hover {
+    background-color: gold;
+}
+
+/* RENDEZ-VOUS */
+.rendez-vous {
+    display: flex;
+    gap: 60px;
+    padding: 60px 40px;
+    align-items: center;
+    background-color: white;
+}
+
+.rendez-vous-left {
+    flex: 1;
+}
+
+.rendez-vous-left img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.rendez-vous-right {
+    flex: 1;
+}
+
+.rendez-vous-right p:first-of-type {
+    color: burlywood;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.rendez-vous-right h1 {
+    font-size: 32px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.rendez-vous-right p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.rendez-vous-right a {
+    padding: 13px 26px;
+    background-color: goldenrod;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* MAPS */
+.maps {
+    width: 100%;
+    height: 400px;
+}
+
+.maps iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* ANNONCE */
+.annonce {
+    position: relative;
+    z-index: 5;
+    background-color: goldenrod;
+    color: black;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    transform: translateY(-50%);
+    margin: 0 40px;
+    border-radius: 10px;
+}
+
+.annonce h4 {
+    color: black;
+    margin: 0;
+    font-size: 13px;
+    letter-spacing: 2px;
+    white-space: nowrap;
+}
+
+.annonce p {
+    font-size: 13px;
+    margin: 0;
+}
+
+.annonce p:last-of-type {
+    font-weight: 600;
+}
+
+.social-grid {
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.social-grid > p {
+    color: burlywood;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.social-grid h1 {
+    font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.social-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.social-card {
+    position: relative;
+    height: 180px;
+    border-radius: 12px;
+    overflow: hidden;
+    text-decoration: none;
+    background-size: cover;
+    background-position: center;
+}
+
+.instagram { background-image: url(image/IMG_4089.JPG); }
+.tiktok { background-image: url(image/IMG_4090.JPG); }
+.youtube { background-image: url(image/IMG_4091.JPG); }
+.whatsapp { background-image: url(image/IMG_4098.JPG); }
+
+.social-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+    transition: 0.3s;
+}
+
+.social-card:hover .social-overlay {
+    background: rgba(0,0,0,0.3);
+}
+
+.social-content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    color: white;
+}
+
+.social-content i {
+    font-size: 30px;
+}
+
+.social-content h3 {
+    margin: 0 0 4px 0;
+    font-size: 18px;
+}
+
+.social-content p {
+    margin: 0;
+    font-size: 12px;
+    color: #ddd;
+}
+
+.maps {
+    display: flex;
+    height: 400px;
+    margin: 30px;
+}
+
+.maps-left {
+    flex: 1;
+}
+
+.maps-left iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+    border-radius: 8px;
+}
+
+.maps-right {
+    flex: 1;
+  flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.maps-right h1 {
+    color: black;
+    font-size: 28px;
+    text-align: center;
+    line-height: 1.4;
+    margin-top: 3px;
+}
+
+@media screen and (max-width: 768px) {
+    .maps {
+        flex-direction: column;
+        height: auto;
+      
+    }
+
+    .maps-left {
+        height: 300px;
+        order: 2;
+    }
+
+    .maps-right {
+        padding: 30px 20px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .social-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
 
 
 
@@ -1875,6 +2215,67 @@ body {
     .mobile-only { display: block; }
     .desktop-only { display: none; }
 }
+
+@media screen and (max-width: 768px) {
+    .formulaire {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+
+    .formulaire-left {
+        position: static;
+        text-align: center;
+    }
+
+    .rendez-vous {
+        flex-direction: column;
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .rendez-vous-right a {
+        display: inline-block;
+    }
+
+    .annonce {
+        flex-direction: column;
+        text-align: center;
+        margin: 0 20px;
+        gap: 8px;
+    }
+
+  
+        .formulaire-right {
+            width: 100%;
+        }
+        
+        .formulaire-right form {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .rendez-vous-right {
+        order: 1;
+        }
+
+        .rendez-vous-left {
+            order: 2;
+       
+            }
+
+            .rendez-vous-left img {
+                width: 100%;
+                height: 300px;
+                border-radius: 10px;
+            }
+            
+            .rendez-vous-left {
+                width: 100%;
+            }
+    
+    
+}
+
 
 
 

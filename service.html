@@ -34,22 +34,29 @@
             <nav>
                 <ul class="menu">
                     <li class="menu-list">
-                        <a href="">Acceuil</a>
+                        <a href="index.html">Acceuil</a>
                     </li>
                     <li class="menu-list">
-                        <a href="">A propos</a>
+                        <a href="about.html">A propos</a>
                     </li>
-                    <li class="menu-list">
-                        <a href="">Programmes</a>
+                    <li class="menu-list dropdown-parent">
+                        <a href="">Programmes <i class="ri-arrow-down-s-line"></i></a>
+                        <div class="dropdown">
+                            <ul>
+                                <li><a href="">Nos cultes</a></li>
+                                <li><a href="">Retraites</a></li>
+                                <li><a href="">Euggelion Ministry</a></li>
+                            </ul>
+                        </div>
                     </li>
                     <li class="menu-list">
                         <i class="ri-arrow-down-wide-line"></i><div class="dropdown"></div>
                     </li>
                     <li class="menu-list">
-                        <a href="">Contact</a>
+                        <a href="contact.html">Contact</a>
                     </li>
                     <li class="menu-list">
-                        <a href="">Offrande</a>
+                        <a href="offrande.html">Offrande</a>
                     </li>
                 </ul>
             </nav>
@@ -66,10 +73,10 @@
             <nav class="full-menu"> 
                 <ul class="menu">
                     <li class="menu-list">
-                        <a href="">Acceuil</a>
+                        <a href="index.html">Acceuil</a>
                     </li>
                     <li class="menu-list">
-                        <a href="">A propos</a>
+                        <a href="about.html">A propos</a>
                     </li>
               
                     <li class="menu-list">
@@ -83,10 +90,10 @@
                         </div>
                     </li>
                     <li class="menu-list">
-                        <a href="">Contact</a>
+                        <a href="contact.html">Contact</a>
                     </li>
                     <li class="menu-list">
-                        <a href="">Offrande</a>
+                        <a href="offrande.html">Offrande</a>
                     </li>
                 </ul>
             </nav>
@@ -120,64 +127,109 @@
         </div>
     </header>
     <main></main>
-    <footer>
-        <div class="footer-contain">
-            <div class="logo-footer">
-                <img src="image/Photoroom_20260526_160948.PNG" alt="">
-                <h5>JESUS SAUVE</h5>
-            </div>
-            <div class="footer-menu">
-                <h4>Navigation</h4>
-                <ul>
-                    <li><a href="">Accueil</a></li>
-                    <li><a href="">A propos</a></li>
-                    <li><a href="">Nos cultes</a></li>
-                    <li><a href="">Contact</a></li>
-                </ul>
-            </div>
-            <div class="autres">
-                <h4>Newsletter</h4>
-                <p>Restez informé de nos activités</p>
-                <div class="newsletter-form">
-                    <input type="email" placeholder="Votre e-mail">
-                    <button>S'inscrire</button>
+
+
+
+        <footer>
+   
+            <div class="footer-contain">
+                <div class="logo-footer">
+                    <img src="image/Photoroom_20260526_160948.PNG" alt="">
+                    <h5>JESUS SAUVE</h5>
+                </div>
+                <div class="footer-menu">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="">Accueil</a></li>
+                        <li><a href="">A propos</a></li>
+                        <li><a href="">Nos cultes</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="autres">
+                    <h4>Newsletter</h4>
+                    <p>Restez informé de nos activités</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Votre e-mail">
+                        <button>S'inscrire</button>
+                    </div>
+                </div>
+                <div class="Contactez">
+                    <h4>Contact</h4>
+                    <p><i class="ri-map-pin-line"></i> Dakar, Sénégal</p>
+                    <p><i class="ri-phone-line"></i> +221 XX XXX XX XX</p>
+                    <p><i class="ri-mail-line"></i> contact@jesussauve.com</p>
                 </div>
             </div>
-            <div class="Contactez">
-                <h4>Contact</h4>
-                <p><i class="ri-map-pin-line"></i> Dakar, Sénégal</p>
-                <p><i class="ri-phone-line"></i> +221 XX XXX XX XX</p>
-                <p><i class="ri-mail-line"></i> contact@jesussauve.com</p>
+            <div class="footer-bottom">
+                <p>Copyrights 2026 by ministère Jésus Sauve</p>
+                <div class="footer-RS">
+                    <a href="https://instagram.com" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://tiktok.com" target="_blank">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                    <a href="https://whatsapp.com" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
             </div>
-        </div>
-        <div class="footer-bottom">
-            <p>Copyrights 2026 by ministère Jésus Sauve</p>
-            <div class="footer-RS">
-                <a href="https://instagram.com" target="_blank">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-                <a href="https://tiktok.com" target="_blank">
-                    <i class="fa-brands fa-tiktok"></i>
-                </a>
-                <a href="https://whatsapp.com" target="_blank">
-                    <i class="fa-brands fa-whatsapp"></i>
-                </a>
-            </div>
-        </div>
-    </footer>
+        </footer>
+        <script>const menuToggle = document.getElementById("toggle");
+            const fullMenu = document.querySelector(".full-menu");
+            const top1 = document.querySelector(".top1");
+            
+            menuToggle.addEventListener("click", function() {
+                menuToggle.classList.toggle("active");
+                fullMenu.classList.toggle("active");
+                top1.classList.toggle("hidden");
+            });
     
-</body>
-
-<script>
-const menuToggle = document.getElementById("toggle");
-const fullMenu = document.querySelector(".full-menu");
-
-menuToggle.addEventListener("click", function() {
-    menuToggle.classList.toggle("active");
-    fullMenu.classList.toggle("active");
-});
-
-</script>
-
-
+            const closeMenu = document.getElementById("closeMenu");
+    
+    closeMenu.addEventListener("click", function() {
+        fullMenu.classList.remove("active");
+        menuToggle.classList.remove("active");
+        top1.classList.remove("hidden");
+    });
+    
+    const buttons = document.querySelectorAll(".select button");
+    const infos = document.querySelectorAll(".info-SN, .info-Canada, .info-Togo, .info-Guediawaye");
+    
+    // Cacher tous les infos au départ sauf le premier
+    infos.forEach((info, i) => {
+        if (i !== 0) info.style.display = "none";
+    });
+    
+    buttons.forEach((button, index) => {
+        button.addEventListener("click", function() {
+            // Retirer active de tous les boutons
+            buttons.forEach(btn => btn.classList.remove("active"));
+            // Ajouter active au bouton cliqué
+            this.classList.add("active");
+            // Cacher tous les infos
+            infos.forEach(info => info.style.display = "none");
+            // Afficher le bon
+            if (infos[index]) infos[index].style.display = "block";
+        });
+    });
+    
+    
+    new Splide('.splide', {
+        type: 'loop',
+        perPage: 1,
+        arrows: false,
+        pagination: true,
+    }).mount();
+    
+    
+    
+    
+    
+            
+            </script>
+       
+                
+            </body>
 </html>
