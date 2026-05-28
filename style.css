@@ -727,7 +727,7 @@ footer h4 {
 
 .sermons {
     padding: 60px 40px;
-    background-color: whitesmoke;
+    background-color: white;
     min-height: 600px;
     align-items: center;
 
@@ -740,6 +740,9 @@ footer h4 {
     align-items: flex-start;
     margin-bottom: 40px;
     margin-top: 50px;
+}
+.but {
+    text-decoration: none; color: white;
 }
 
 
@@ -1008,7 +1011,7 @@ footer h4 {
 }
 
 .semence {
-    padding: 80px 40px;
+    padding: 60px 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1095,7 +1098,7 @@ footer h4 {
 }
 
 .galerie {
-    padding: 60px 40px;
+    padding:  40px;
     background-color: white;
 }
 
@@ -1181,6 +1184,27 @@ footer h4 {
         justify-content: center;
         z-index: 200;
     }
+
+    .but {
+        text-decoration: none; color: black;
+    }
+    .select button {
+        padding: 8px;
+        border-radius: 6px;
+        background-color: transparent;
+        border: 1px solid goldenrod;
+        color: black;
+    }
+
+    .infoo p span {
+        height: 0px;
+        width: 0px;
+       
+     
+        display: inline-block;
+        text-align: center;
+    }
+
 
     .sermons-right {
         flex: 2;
@@ -1297,6 +1321,8 @@ text-align: center;
         align-items: center;
         justify-content: center;
         display: flex;
+        background-color: white;
+        color: black;
     }
 
     .right {
@@ -1498,7 +1524,7 @@ display: none;
     .infoo p span {
         height: 18px;
         width: 18px;
-        background-color: goldenrod;
+        background-color: transparent;
         border-radius: 50%;
         display: inline-block;
         text-align: center;
