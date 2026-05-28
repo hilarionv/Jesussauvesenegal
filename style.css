@@ -1752,6 +1752,36 @@ display: none;
             display: flex;
             justify-content: center;
         }
+
+   .right-bottom {
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 15px;
+    color: white;
+}
+
+.right-bottom p {
+    color: #ddd;
+}
+
+.right-bottom .select button {
+    border-color: burlywood;
+    color: #ddd !important;
+}
+
+.right-bottom .select button.active {
+    background-color: burlywood;
+    color: black !important;
+}
+
+.info-SN a, .info-Canada a,
+.info-Togo a, .info-Guediawaye a {
+    color: burlywood;
+    border-bottom-color: burlywood;
+}
+
+        
 }
 
 @media screen and (max-width: 768px) {
@@ -1782,6 +1812,14 @@ display: none;
             .sermons-grid {
                 grid-template-columns: 1fr;
             }
+            .select button {
+                color: black;
+            }
+
+            .select  {
+                justify-content: center;
+            }
+            
         }
         
 
@@ -1816,6 +1854,7 @@ body {
         gap: 20px !important;
         overflow: visible !important;
         transform: none !important;
+        
     }
 
     .sermons-slider .splide__slide {
