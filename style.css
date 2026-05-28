@@ -1618,10 +1618,14 @@ font-size: 11px;
     display: flex;
     height: 400px;
     margin: 30px;
+    max-width: 86%;
+align-items: center;
 }
 
 .maps-left {
     flex: 1;
+    overflow: hidden;
+   
 }
 
 .maps-left iframe {
@@ -1639,6 +1643,7 @@ font-size: 11px;
     align-items: center;
     justify-content: center;
     padding: 40px;
+    overflow: hidden;
 }
 
 .maps-right h1 {
