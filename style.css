@@ -1819,6 +1819,10 @@ display: none;
             .select  {
                 justify-content: center;
             }
+
+            .logo-footer h5 {
+                display: none;
+            }
             
         }
         
