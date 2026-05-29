@@ -2216,6 +2216,23 @@ padding-left: 30px;
     .maps-right {
         padding: 30px 20px;
     }
+
+    .valeurs h1 {
+        font-size: 32px;
+        margin-top: 0;
+        margin-bottom: 30px;
+        z-index: 3;
+        position: relative;
+        text-align: end;
+      
+    }
+
+    .histoire-card img {
+        width: 100%;
+        height: 320px;
+        object-fit: cover;
+        border-radius: 12px;
+    }
 }
 
 
