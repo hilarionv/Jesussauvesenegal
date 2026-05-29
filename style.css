@@ -2739,6 +2739,47 @@ font-size: 15px;
 
         font-size: 15px;
            }
+
+      
+.retraite-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    padding: 40px;
+    margin-bottom: 70px;
+    flex-wrap: wrap;
+} 
+
+.retraite-content h3 {
+margin-top: 6px;
+font-size: 25px;
+}  
+
+.retraite-info {
+    background-color: whitesmoke;
+    padding: 50px;
+    display: flex;
+    border-radius: 30px;
+}
+
+.left-retraite {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-retraite img {
+  border-radius: 20px;
+  height: 500px;
+}
+.right-retraite {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
     
 
 /* MOBILE */
