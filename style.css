@@ -2755,16 +2755,16 @@ font-size: 15px;
         text-decoration: none;
         border-bottom: 1px solid white;
         color: white;
-        font-size: 14px;
+        font-size: 13px;
         }
         
         .testify p:first-of-type {
          font-weight: 600;
-         font-size: 14px;
+         font-size: 13px;
             }
             .testify p:last-of-type {
 
-                font-size: 14px;
+                font-size: 13px;
                    }
             
 }
