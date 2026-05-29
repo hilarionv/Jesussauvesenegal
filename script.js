@@ -41,3 +41,17 @@ new Splide('.splide', {
     arrows: false,
     pagination: true,
 }).mount();
+
+function openMot(e) {
+    e.preventDefault();
+    document.getElementById('motModal').classList.add('open');
+}
+
+function closeMot() {
+    document.getElementById('motModal').classList.remove('open');
+}
+
+// Fermer avec la touche Échap
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeMot();
+});
