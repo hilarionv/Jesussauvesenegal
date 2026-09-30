@@ -1,185 +1,44 @@
-/* premium.css — couche de finition, chargée APRÈS style.css.
-   Ne remplace rien de ta logique : supprime ce fichier et le site revient tel quel. */
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&display=swap');
+/* premium.css — finitions légères, à charger après style.css.
+   Ne change ni tes polices, ni tes couleurs, ni ta mise en page. */
 
-:root {
-    --or: #b8862f;
-    --or-clair: #d9b56a;
-    --nuit: #0e0c0a;
-    --creme: #faf7f2;
-    --texte: #2b2622;
-    --serif: "Cormorant Garamond", Georgia, serif;
-    --ease: cubic-bezier(.2, .7, .2, 1);
-}
-
-/* ---------- Base ---------- */
 html { scroll-behavior: smooth; }
-body { color: var(--texte); line-height: 1.6; -webkit-font-smoothing: antialiased; }
-::selection { background: var(--or); color: #fff; }
-:focus-visible { outline: 2px solid var(--or); outline-offset: 3px; }
-[id] { scroll-margin-top: 90px; }
-a, button { transition: color .25s, background-color .25s, border-color .25s, opacity .25s; }
+[id] { scroll-margin-top: 90px; } /* la nav fixe ne cache plus les ancres (#prog...) */
+::selection { background: goldenrod; color: white; }
+:focus-visible { outline: 2px solid goldenrod; outline-offset: 3px; }
 
-/* ---------- Header ---------- */
+/* Header : légèrement translucide, ombre plus douce */
 .top {
-    background: rgba(255, 255, 255, .88);
-    -webkit-backdrop-filter: blur(12px);
-    backdrop-filter: blur(12px);
-    box-shadow: none;
-    border-bottom: 1px solid rgba(0, 0, 0, .06);
-    transition: padding .3s, box-shadow .3s;
+    background-color: rgba(255, 255, 255, .94);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 1px 12px rgba(0, 0, 0, .07);
 }
-.top.scrolled { padding-top: 4px; padding-bottom: 4px; box-shadow: 0 6px 24px rgba(0, 0, 0, .08); }
-.logo img { transition: height .3s; }
-.top.scrolled .logo img { height: 48px; }
+.top > nav:not(.full-menu) .menu-list > a { transition: color .2s; }
+.top > nav:not(.full-menu) .menu-list > a:hover { color: goldenrod; }
 
-nav ul li a {
-    position: relative;
-    padding: 6px 10px;
-    font-size: 12.5px;
-    font-weight: 500;
-    letter-spacing: .14em;
-    text-transform: uppercase;
-}
-nav ul li a::after {
-    content: "";
-    position: absolute;
-    left: 10px; right: 10px; bottom: 0;
-    height: 1px;
-    background: var(--or);
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform .3s var(--ease);
-}
-nav ul li a:hover::after { transform: scaleX(1); }
-.full-menu ul li a { text-transform: none; letter-spacing: 0; }
-.full-menu ul li a::after { display: none; }
+/* Hero : un peu de profondeur et un texte plus confortable à lire */
+.overlay { background: linear-gradient(180deg, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .7) 100%); }
+.text h1 { line-height: 1.15; letter-spacing: .01em; }
+.text p { line-height: 1.75; color: rgba(255, 255, 255, .88); }
 
-.don a {
-    padding: 11px 22px;
-    background-color: var(--nuit);
-    border: 1px solid var(--nuit);
-    border-radius: 2px;
-    font-size: 12.5px;
-    font-weight: 500;
-    letter-spacing: .14em;
-    text-transform: uppercase;
+/* Boutons */
+.button a, .don a, .youtube-btn, .joinn a {
+    transition: background-color .25s, color .25s, border-color .25s, transform .25s;
 }
-.don a:hover { background-color: var(--or); border-color: var(--or); }
+.button a:first-of-type:hover { background-color: #b8860b; transform: translateY(-2px); }
+.button a:last-of-type:hover { background-color: rgba(218, 165, 32, .18); transform: translateY(-2px); }
+.don a:hover { background-color: #6f1d1d; }
 
-/* ---------- Hero ---------- */
-.overlay {
-    background: linear-gradient(100deg, rgba(12, 9, 6, .88) 0%, rgba(12, 9, 6, .55) 55%, rgba(12, 9, 6, .25) 100%);
-}
-.text h1 {
-    font-family: var(--serif);
-    font-weight: 600;
-    font-size: clamp(38px, 5.4vw, 72px);
-    line-height: 1.02;
-    letter-spacing: -.01em;
-    margin: 0 0 22px;
-}
-.text p { font-size: 16px; line-height: 1.75; color: rgba(255, 255, 255, .82); max-width: 520px; }
-.button { gap: 14px; margin-top: 36px; }
-.button a {
-    padding: 14px 28px;
-    border-radius: 2px;
-    font-size: 12.5px;
-    font-weight: 500;
-    letter-spacing: .14em;
-    text-transform: uppercase;
-}
-.button a:first-of-type { background-color: var(--or); border: 1px solid var(--or); }
-.button a:first-of-type:hover { background-color: var(--or-clair); border-color: var(--or-clair); color: var(--nuit); }
-.button a:last-of-type { border-color: rgba(255, 255, 255, .55); }
-.button a:last-of-type:hover { background-color: rgba(255, 255, 255, .12); border-color: #fff; }
+/* Sermons */
+.sermon-thumb { box-shadow: 0 8px 24px rgba(0, 0, 0, .1); transition: box-shadow .3s; }
+.sermon-thumb img { transition: transform .5s ease; }
+.sermon-card:hover .sermon-thumb { box-shadow: 0 14px 32px rgba(0, 0, 0, .18); }
 
-/* ---------- Titres de sections ---------- */
-.sermons h1, .about h1, .programme h1, .galerie h1, .join .right h1 {
-    font-family: var(--serif);
-    font-weight: 600;
-    line-height: 1.1;
-}
-.sermons h1, .about h1, .programme h1, .galerie h1 { font-size: clamp(30px, 4vw, 46px); }
-.sermons-top div > p:first-of-type,
-.about > p:first-of-type,
-.programme p:first-of-type,
-.galerie > p:first-of-type {
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: .22em;
-    text-transform: uppercase;
-    color: var(--or);
-}
-.gauche h2, .bio-text h2, .bio-card-info h2 { font-family: var(--serif); font-weight: 600; }
+/* Rejoignez-nous */
+.select button { cursor: pointer; transition: background-color .2s, color .2s; }
+.select button:not(.active):hover { background-color: rgba(218, 165, 32, .18); }
 
-/* ---------- Sermons ---------- */
-.sermon-thumb {
-    border-radius: 4px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, .12);
-    transition: box-shadow .35s;
-}
-.sermon-thumb img { transition: transform .6s var(--ease); }
-.sermon-card:hover .sermon-thumb { box-shadow: 0 18px 40px rgba(0, 0, 0, .2); }
-.sermon-card:hover .sermon-thumb img { transform: scale(1.05); }
-.play-btn { background: rgba(12, 9, 6, .35); transition: background .3s; }
-.sermon-card:hover .play-btn { background: rgba(12, 9, 6, .12); }
-.sermons .sermon-card a .sermon-title {
-    font-family: var(--serif);
-    font-size: 22px;
-    font-weight: 600;
-    color: var(--nuit);
-    margin: 16px 0 4px;
-}
-.sermon-date { font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: #8a8178; }
-
-/* ---------- Rejoignez-nous ---------- */
-.join { background: radial-gradient(120% 100% at 0% 0%, #1a1611 0%, var(--nuit) 60%); }
-.left img { border-radius: 4px; box-shadow: 0 20px 50px rgba(0, 0, 0, .45); }
-.select button {
-    padding: 10px 16px;
-    border-radius: 2px;
-    border-color: rgba(217, 181, 106, .5);
-    color: #e9e2d6;
-    font-family: inherit;
-    font-size: 11.5px;
-    letter-spacing: .12em;
-    cursor: pointer;
-}
-.select button:hover { border-color: var(--or-clair); color: #fff; }
-.select button.active { background-color: var(--or-clair); border-color: var(--or-clair); color: var(--nuit); font-weight: 600; }
-.select button a { color: inherit; text-decoration: none; border: 0; }
-.infoo p span {
-    height: 26px; width: 26px;
-    display: inline-flex; align-items: center; justify-content: center;
-    background: rgba(217, 181, 106, .15);
-    color: var(--or-clair);
-    font-size: 13px;
-}
-.verset { border-color: rgba(217, 181, 106, .35); background: rgba(255, 255, 255, .03); }
-.verset .quote { font-family: var(--serif); font-size: 15px; line-height: 1.4; color: #b9b0a2; }
-
-/* ---------- À propos ---------- */
-.mission, .Vision {
-    padding: 18px 22px;
-    background: var(--creme);
-    border-left: 2px solid var(--or);
-    border-radius: 0 4px 4px 0;
-}
-
-/* ---------- Footer ---------- */
-footer { background-color: var(--nuit); }
-footer ul li a { color: #cfc7ba; }
-footer ul li a:hover { color: var(--or-clair); }
-.newsletter-form input, .newsletter-form button { border-radius: 2px; }
-.newsletter-form input:focus { border-color: var(--or-clair); }
-.footer-bottom { border-top-color: rgba(255, 255, 255, .1); color: #9a9184; }
-
-/* ---------- Apparition au scroll (classe ajoutée par premium.js) ---------- */
-.reveal { opacity: 0; transform: translateY(22px); transition: opacity .8s var(--ease), transform .8s var(--ease); }
-.reveal.in { opacity: 1; transform: none; }
-
-@media (prefers-reduced-motion: reduce) {
-    html { scroll-behavior: auto; }
-    .reveal { opacity: 1; transform: none; transition: none; }
-}
+/* Footer */
+footer ul li a { transition: color .2s; }
+footer ul li a:hover { color: goldenrod; }
+.newsletter-form input:focus { border-color: goldenrod; }
