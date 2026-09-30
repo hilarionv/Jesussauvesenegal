@@ -20,7 +20,7 @@
     }, { threshold: 0.12 });
 
     document.querySelectorAll(
-        '.sermons-top, .sermons-grid, .join .left, .join .right, .about-content, .programme, .galerie, .bio'
+        '.sermons-top, .sermons-grid, .join, .about-content, .programme, .galerie, .bio'
     ).forEach(function (el) {
         el.classList.add('reveal');
         io.observe(el);
